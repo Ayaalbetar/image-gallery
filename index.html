@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div style="display: flex; justify-content: center ; ">
+
+    <h1 style="text-align: center;" > Image gallery</h1>
+  </div>
+  
+    <div class="gallery">
+        <img src="photos/1.jpg" alt="Image 1" onclick="openLightbox(this.getAttribute('src'))">
+        <img src="photos/2.jpg" alt="Image 2" onclick="openLightbox(this.src)">
+        <img src="photos/3.jpg" alt="Image 3" onclick="openLightbox(this.src)">
+        <img src="photos/4.jfif" alt="Image 4" onclick="openLightbox(this.src)">
+        <img src="photos/1.jpg" alt="Image 1" onclick="openLightbox(this.getAttribute('src'))">
+        <img src="photos/2.jpg" alt="Image 2" onclick="openLightbox(this.src)">
+        <img src="photos/3.jpg" alt="Image 3" onclick="openLightbox(this.src)">
+        <img src="photos/4.jfif" alt="Image 4" onclick="openLightbox(this.src)">
+   
+       </div>
+      
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" >
+      </div>
+      <script src="script.js"></script>
+</body>

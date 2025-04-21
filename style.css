@@ -1,0 +1,35 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 صور في كل سطر */
+  gap: 15px;
+  width: 66.66%;           /* يعني 8 من 12 عمود */
+  max-width: 1000px;       /* حد أقصى لحجم المعرض */
+  margin: 20px auto;       /* توسيط بالعرض + مسافة من الأعلى */
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+  
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
